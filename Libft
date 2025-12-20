@@ -1,7 +1,0 @@
-"Your very first own library"
-
-Dans ce tout premier projet du cursus 42, je dois créer ma propre bibliothèque en recodant des fonctions de la libc.
-
-Pour construire la librairie, placez-vous à la racine du projet et compilez à l'aide de la commande "make".
-
-La libft est maintenant prête à être utilisée !
