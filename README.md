@@ -14,4 +14,5 @@ Pour celles et ceux qui ne seraient pas familiers avec la pédagogie 42, laissez
   
 - Tu n'as pas la réponse ? Demande à ton voisin de gauche, ou à ton voisin de droite !
 
+
 Bonne visite !
