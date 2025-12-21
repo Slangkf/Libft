@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+ft_putnbr_fd - writes an integer to a file descriptor
+
+This function writes the integer 'n' to the given file descriptor 'fd'.
+It handles negative numbers by printing a '-' sign and uses recursion
+to output each digit. The special case of INT_MIN is handled separately
+to avoid integer overflow.
+
+Return: nothing (void function).
+*/
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
@@ -30,6 +40,7 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd((n % 10) + '0', fd);
 	}
 }
+
 /*
 #include <unistd.h>
 int	main(void)
