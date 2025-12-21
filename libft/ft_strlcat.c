@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+ft_strlcat - concatenates strings with size limit
+
+This function appends the string 'src' to the end of 'dst', ensuring that
+no more than 'siz' bytes are written to 'dst', including the null terminator.
+If 'dst' is already longer than or equal to 'siz', no concatenation occurs.
+
+Return: the total length of the string it tried to create, which is the
+initial length of 'dst' plus the length of 'src'.
+*/
 size_t	ft_strlcat(char *dst, const char *src, size_t siz)
 {
 	size_t	i;
@@ -39,6 +49,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t siz)
 		dst[i] = '\0';
 	return (dst_l + j);
 }
+
 /*
 #include <string.h>
 #include <stdio.h>
@@ -47,7 +58,7 @@ int	main(void)
 {
 	char	src[] = " World!";
 	char	dst[] = "Hello";
-	printf("taille totale : %zu\n", ft_strlcat(dst, src, 10));
+	printf("total lengt = %zu\n", ft_strlcat(dst, src, 10));
 	printf("dst : %s", dst);
 	return (0);
 }*/
