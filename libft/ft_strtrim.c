@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/*
+ft_is_in_set - checks if a character is in a set
+
+This function checks whether the character 'c' is present in the
+string 'set'.
+
+Return: 1 if 'c' is found in 'set', 0 otherwise.
+*/
 static int	ft_is_in_set(char c, const char *set)
 {
 	while (*set != '\0')
@@ -23,6 +31,16 @@ static int	ft_is_in_set(char c, const char *set)
 	return (0);
 }
 
+/*
+ft_strtrim - trims characters from the beginning and end of a string
+
+This function returns a new string which is a copy of 's1' with all
+characters from 'set' removed from the start and end. Memory is
+allocated for the new string, which is null-terminated.
+
+Return: pointer to the trimmed string, or NULL if allocation fails
+or if 's1' or 'set' is NULL.
+*/
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
@@ -44,6 +62,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	result[end - start] = '\0';
 	return (result);
 }
+
 /*
 #include <stdio.h>
 #include <string.h>
@@ -56,7 +75,7 @@ int	main(void)
 	char	*result;
 	
 	result = ft_strtrim(s1, set);
-	printf("Nouvelle string: %s\n", result);
+	printf("New string: %s\n", result);
 	free(result);
 	return (0);
 }*/
