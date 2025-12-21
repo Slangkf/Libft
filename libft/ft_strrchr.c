@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+ft_strrchr - locates the last occurrence of a character in a string
+
+This function searches for the last occurrence of the character 'c'
+in the string 's'. Each character is cast to unsigned char to handle
+0-255 values correctly. If 'c' is the null terminator, a pointer
+to the end of the string is returned.
+
+Return: pointer to the last occurrence of 'c' in 's', or NULL if not found.
+*/
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*ps;
@@ -29,6 +39,7 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s);
 	return (ps);
 }
+
 /*
 #include <stdio.h>
 #include <string.h>
