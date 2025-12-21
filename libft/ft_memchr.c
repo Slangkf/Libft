@@ -20,6 +20,8 @@ for the first occurrence of the byte 'c'. The memory is accessed as
 unsigned characters to handle all byte values correctly. 
 
 Return: a pointer to the matching byte, or NULL if the byte is not found.
+
+Note: cast to unsigned char to handle values 0-255 correctly.
 */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
