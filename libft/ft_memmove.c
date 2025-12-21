@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+ft_memmove - copies memory area safely
+
+This function copies 'n' bytes from the memory area pointed to by 'src'
+to the memory area pointed to by 'dest'. It handles overlapping memory areas
+by copying backwards when necessary. Memory is accessed as unsigned char
+arrays to correctly handle 0-255 values.
+
+Return: pointer to 'dest'. If both 'dest' and 'src' are NULL, returns NULL.
+*/
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*pdest;
@@ -35,6 +45,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
 /*
 #include <string.h>
 #include <stdio.h>
