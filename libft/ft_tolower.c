@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*
+ft_tolower - converts an uppercase letter to lowercase
+
+This function checks if 'c' is an uppercase ASCII letter (A-Z). 
+If so, it returns the corresponding lowercase letter (a-z).
+Otherwise, it returns 'c' unchanged.
+
+Return: the lowercase equivalent of 'c' if applicable, or 'c' itself.
+*/
 int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
@@ -19,6 +28,7 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
+
 /*
 #include <ctype.h>
 #include <stdio.h>
