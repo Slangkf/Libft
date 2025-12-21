@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/*
+ft_bzero - sets memory to zero
+
+This function fills the first 'n' bytes of the memory
+area pointed to by 's' with zero bytes.
+
+Return: nothing (void function).
+
+Note: void *s allows it to work with any type of memory.
+It is cast to unsigned char* because you cannot dereference
+a void pointer directly.
+*/
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ps;
@@ -25,6 +37,7 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
+
 /*
 #include <strings.h>
 #include <stdio.h>
