@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*
+ft_strlcpy - copies a string with size limit
+
+This function copies the string 'src' into 'dst', writing at most 'siz'
+bytes including the null terminator. If 'siz' is 0, no characters are
+copied and the length of 'src' is returned.
+
+Return: the total length of 'src'.
+*/
 size_t	ft_strlcpy(char *dst, const char *src, size_t siz)
 {
 	size_t	i;
@@ -27,6 +36,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t siz)
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
+
 /*
 #include <string.h>
 #include <stdio.h>
