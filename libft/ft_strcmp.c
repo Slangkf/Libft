@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+ft_strcmp - compares two strings
+
+This function compares the strings 's1' and 's2' character by character.
+Each character is cast to unsigned char to ensure correct comparison
+of values in the range 0–255.
+
+Return: 0 if both strings are equal, 1 if 's1' is greater than 's2',
+or -1 if 's1' is smaller than 's2'.
+*/
 int	ft_strcmp(const char *s1, const char *s2)
 {
 	while (*s1 || *s2)
@@ -27,6 +37,7 @@ int	ft_strcmp(const char *s1, const char *s2)
 	}
 	return (0);
 }
+
 /*
 #include <string.h>
 #include <stdio.h>
