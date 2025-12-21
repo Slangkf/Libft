@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+ft_atoi - converts a string to an integer
+
+This function converts the string 'nptr' to an int.
+It skips any leading whitespace, handles an optional '+' or '-' sign,
+and accumulates consecutive digits into an integer value.
+Conversion stops at the first non-digit character.
+
+Return: the integer value represented by the initial digits of the string.
+*/
 int	ft_atoi(const char *nptr)
 {
 	int	i;
@@ -37,6 +47,7 @@ int	ft_atoi(const char *nptr)
 	}
 	return (num * sign);
 }
+
 /*
 #include <stdlib.h>
 #include <stdio.h>
