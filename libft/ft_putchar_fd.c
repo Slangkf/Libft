@@ -12,10 +12,19 @@
 
 #include "libft.h"
 
+/*
+ft_putchar_fd - writes a character to a file descriptor
+
+This function writes the character 'c' to the given file descriptor 'fd'
+using the write system call.
+
+Return: nothing (void function).
+*/
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+
 /*
 #include <unistd.h>
 
