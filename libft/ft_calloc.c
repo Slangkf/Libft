@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/*
+ft_calloc - allocates and zeroes memory
+
+This function allocates memory for an array of 'nmemb' elements of 'size' bytes each.
+If allocation succeeds, all bytes are set to 0.
+If allocation fails or overflow occurs, it returns NULL.
+
+Return: pointer to the allocated memory, or NULL on failure.
+
+Notes: It checks for overflow when multiplying 'nmemb' by 'size'.
+If dividing 'bytes' by 'size' does not return 'nmemb', an overflow has occurred.
+*/
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t	bytes;
@@ -32,6 +44,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	}
 	return (memory);
 }
+
 /*
 #include <stdint.h>
 #include <stdlib.h>
