@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*
+ft_count_n - counts the number of characters needed.
+
+This function returns the number of characters required to represent
+the input number 'num' as a string, including space for a negative sign
+if the number is negative. Zero is counted as 1 character.
+
+Return: number of characters needed for the string representation.
+*/
 static int	ft_count_n(long int num)
 {
 	int	count;
@@ -29,6 +38,16 @@ static int	ft_count_n(long int num)
 	return (count);
 }
 
+/*
+ft_itoa - converts an integer to a string.
+
+This function allocates a new string representing the integer 'n'.
+It uses ft_count_n() to determine the required string length,
+handles negative numbers by adding a '-' sign, and fills the string
+from the end with each digit. The string is null-terminated.
+
+Return: pointer to the allocated string, or NULL if allocation fails
+*/
 char	*ft_itoa(int n)
 {
 	long int	num;
@@ -55,6 +74,7 @@ char	*ft_itoa(int n)
 	}
 	return (result);
 }
+
 /*
 #include <stdio.h>
 #include <stdlib.h>
