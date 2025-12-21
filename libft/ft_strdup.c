@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/*
+ft_strdup - duplicates a string
+
+This function allocates memory and creates a copy of the string 's'.
+The duplicated string is null-terminated.
+
+Return: pointer to the newly allocated string, or NULL if allocation fails.
+*/
 char	*ft_strdup(const char *s)
 {
 	char	*copy;
@@ -32,6 +40,7 @@ char	*ft_strdup(const char *s)
 	copy[i] = '\0';
 	return (copy);
 }
+
 /*
 #include <stdlib.h>
 #include <stdio.h>
@@ -44,7 +53,7 @@ int	main(void)
 	if (copy != NULL)
 		printf("%s\n", copy);
 	else
-		printf("Erreur lors du duplicata");
+		printf("Error");
 	free(copy);
 	return (0);
 }*/
