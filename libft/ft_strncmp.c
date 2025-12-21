@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*
+ft_strncmp - compares up to n characters of two strings
+
+This function compares the first 'n' characters of the strings 's1' and 's2'.
+Each character is cast to unsigned char to correctly handle values 0–255.
+
+Return: 0 if the compared characters are equal, 1 if 's1' is greater than
+'s2', or -1 if 's1' is smaller than 's2'.
+*/
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	while ((*s1 || *s2) && n--)
@@ -27,6 +36,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+
 /*
 #include <string.h>
 #include <stdio.h>
