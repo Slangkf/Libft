@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*
+ft_count_sub - counts the number of substrings
+
+This function counts how many substrings are present in the string 's',
+separated by the delimiter character 'c'. Consecutive delimiters are
+ignored.
+
+Return: number of substrings found.
+*/
 static int	ft_count_sub(const char *s, char c)
 {
 	int	i;
@@ -33,6 +42,14 @@ static int	ft_count_sub(const char *s, char c)
 	return (i);
 }
 
+/*
+ft_sub_dup - duplicates a substring
+
+This function allocates and returns a new string containing 'len'
+characters starting from 'start'. The returned string is null-terminated.
+
+Return: pointer to the duplicated substring, or NULL if allocation fails.
+*/
 static char	*ft_sub_dup(char const *start, size_t len)
 {
 	char	*dup;
@@ -45,6 +62,15 @@ static char	*ft_sub_dup(char const *start, size_t len)
 	return (dup);
 }
 
+/*
+ft_split - splits a string into substrings
+
+This function splits the string 's' into an array of strings using the
+delimiter character 'c'. Memory is allocated for each substring and for
+the array itself. The resulting array is null-terminated.
+
+Return: pointer to the array of substrings, or NULL if allocation fails.
+*/
 char	**ft_split(char const *s, char c)
 {
 	int			s_count;
@@ -72,6 +98,7 @@ char	**ft_split(char const *s, char c)
 	split[i] = NULL;
 	return (split);
 }
+
 /*
 #include <string.h>
 #include <stdio.h>
@@ -86,15 +113,13 @@ int	main(void)
 	result = ft_split(s, c);
 	if (result == NULL)
 		return (1);
-	// Affiche chaque chaîne retournée
+
 	for (int i = 0; result[i] != NULL; i++)
 		printf("result[%d] = %s\n", i, result[i]);
 
-	// Libère chaque chaîne car ft_split alloue dynamiquement
 	for (int i = 0; result[i] != NULL; i++)
 		free(result[i]);
 
-	// Libère le tableau principal
 	free(result);
 	return (0);
 }*/
