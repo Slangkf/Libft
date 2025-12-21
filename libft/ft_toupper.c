@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*
+ft_toupper - converts a lowercase letter to uppercase
+
+This function checks if 'c' is a lowercase ASCII letter (a-z). 
+If so, it returns the corresponding uppercase letter (A-Z).
+Otherwise, it returns 'c' unchanged.
+
+Return: the uppercase equivalent of 'c' if applicable, or 'c' itself.
+*/
 int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)
@@ -19,6 +28,7 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
+
 /*
 #include <stdio.h>
 #include <ctype.h>
