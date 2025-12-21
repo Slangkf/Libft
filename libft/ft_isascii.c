@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*
+ft_isascii - checks if a character is an ASCII value
+
+This function returns 1 if the input character 'c' has a value
+between 0 and 127 inclusive, which corresponds to the standard ASCII table.
+Otherwise, it returns 0.
+
+Return: 1 if 'c' is an ASCII character, 0 otherwise.
+*/
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
@@ -19,6 +28,7 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
+
 /*
 #include <ctype.h>
 #include <stdio.h>
