@@ -12,11 +12,20 @@
 
 #include "libft.h"
 
+/*
+ft_putstr_fd - writes a string to a file descriptor
+
+This function writes the string 's' to the given file descriptor 'fd'
+character by character using the write system call.
+
+Return: nothing (void function).
+*/
 void	ft_putstr_fd(char *s, int fd)
 {
 	while (*s)
 		write(fd, s++, 1);
 }
+
 /*
 #include <unistd.h>
 
