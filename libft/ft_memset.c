@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*
+ft_memset - fills memory with a constant byte
+
+This function sets the first 'n' bytes of the memory area pointed to by 's'
+to the value 'c'. The memory is accessed as unsigned char arrays to
+handle all byte values from 0 to 255 correctly.
+
+Return: pointer to the memory area 's'.
+*/
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*ps;
@@ -28,6 +37,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+
 /*
 #include <string.h>
 #include <stdio.h>
