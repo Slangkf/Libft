@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/*
+ft_substr - extracts a substring from a string
+
+This function allocates and returns a new string which is a substring
+of 's' starting at index 'start' and of maximum length 'len'. If 'start'
+is greater than the length of 's', an empty string is returned. Memory
+is allocated for the new string, which is null-terminated.
+
+Return: pointer to the newly allocated substring, or NULL if allocation fails
+or if 's' is NULL.
+*/
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*copy;
@@ -38,6 +49,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	copy[j] = '\0';
 	return (copy);
 }
+
 /*
 #include <stdlib.h>
 #include <stdio.h>
@@ -45,6 +57,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 int	main(void)
 {
 	char	*dest = (ft_substr("Hello", 4, 5));
-	printf("Nouvelle chaine de caractere : %s", dest);
+	printf("New string : %s", dest);
 	return (0);
 }*/
