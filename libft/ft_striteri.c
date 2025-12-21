@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*
+ft_striteri - applies a function to each character of a string
+
+This function applies the function 'f' to each character of the string 's'.
+The function is called with the index of the character and a pointer to it,
+allowing in-place modification of the string.
+
+Return: nothing (void function).
+*/
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
@@ -25,6 +34,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}	
 }
+
 /*
 #include <stdio.h>
 #include <stdlib.h>
