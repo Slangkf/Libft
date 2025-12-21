@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/*
+ft_strlen - computes the length of a string
+
+This function calculates the number of characters in the string 's'
+excluding the terminating null byte.
+
+Return: the length of the string.
+*/
 size_t	ft_strlen(const char *s)
 {
 	size_t	len;
@@ -21,6 +29,7 @@ size_t	ft_strlen(const char *s)
 		len++;
 	return (len);
 }
+
 /*
 #include <string.h>
 #include <stdio.h>
