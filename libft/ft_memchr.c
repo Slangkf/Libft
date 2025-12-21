@@ -17,11 +17,9 @@ ft_memchr - searches for a byte in memory
 
 This function scans the first 'n' bytes of the memory area pointed to by 's'
 for the first occurrence of the byte 'c'. The memory is accessed as 
-unsigned characters to handle all byte values correctly. 
+unsigned characters to handle values 0-255 correctly. 
 
 Return: a pointer to the matching byte, or NULL if the byte is not found.
-
-Note: cast to unsigned char to handle values 0-255 correctly.
 */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
