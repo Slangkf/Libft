@@ -12,12 +12,22 @@
 
 #include "libft.h"
 
+/*
+ft_putendl_fd - writes a string followed by a newline to a file descriptor
+
+This function writes the string 's' to the given file descriptor 'fd',
+followed by a newline character. Each character is written individually
+using the write system call.
+
+Return: nothing (void function).
+*/
 void	ft_putendl_fd(char *s, int fd)
 {
 	while (*s)
 		write(fd, s++, 1);
 	write(fd, "\n", 1);
 }
+
 /*
 #include <unistd.h>
 
