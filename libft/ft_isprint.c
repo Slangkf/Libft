@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*
+ft_isprint - checks if a character is printable
+
+This function returns 1 if the input character 'c' is printable,
+i.e., it has a value between 32 and 126 inclusive.
+Otherwise, it returns 0.
+
+Return: 1 if 'c' is printable, 0 otherwise.
+*/
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
@@ -19,6 +28,7 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
+
 /*
 #include <ctype.h>
 #include <stdio.h>
