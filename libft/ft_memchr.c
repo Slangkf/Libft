@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*
+ft_memchr - searches for a byte in memory
+
+This function scans the first 'n' bytes of the memory area pointed to by 's'
+for the first occurrence of the byte 'c'. The memory is accessed as 
+unsigned characters to handle all byte values correctly. 
+
+Return: a pointer to the matching byte, or NULL if the byte is not found.
+*/
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*ps;
@@ -30,6 +39,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
 /*
 #include <string.h>
 #include <stdio.h>
