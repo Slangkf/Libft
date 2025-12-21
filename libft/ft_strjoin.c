@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*
+ft_strjoin - concatenates two strings
+
+This function allocates a new string resulting from the concatenation
+of the strings 's1' and 's2'. The returned string is null-terminated.
+
+Return: pointer to the newly allocated string, or NULL if allocation fails
+or if one of the input strings is NULL.
+*/
 char	*ft_strjoin(const char *s1, const char *s2)
 {
 	size_t	size;
@@ -40,6 +49,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	*(dst + i + j) = '\0';
 	return (dst);
 }
+
 /*
 #include <string.h>
 #include <stdio.h>
