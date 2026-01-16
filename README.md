@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by tclouet.*
+*This project was created in December 2024 as part of the 42 curriculum by tclouet.*
 
 <img width="207" height="231" alt="Capture d’écran du 2025-12-21 11-33-03" src="https://github.com/user-attachments/assets/08775820-61ef-4677-ad30-f83754b95efe" />
 
